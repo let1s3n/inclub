@@ -1,4 +1,5 @@
 @import "bootstrap/scss/mixins";
+@import "bootstrap/scss/maps";
 
 
 @mixin font($font-family, $font-file) {
@@ -8,16 +9,12 @@
   }
 }
 
-@include font('poppins-thin', $cdn+'fonts/Poppins/Poppins-Thin.ttf');
-@include font('poppins-semiBold', $cdn+'fonts/Poppins/Poppins-SemiBold.ttf');
+
 @include font('poppins-regular', $cdn+'fonts/Poppins/Poppins-Regular.ttf');
 @include font('poppins-medium', $cdn+'fonts/Poppins/Poppins-Medium.ttf');
 @include font('poppins-light', $cdn+'fonts/Poppins/Poppins-Light.ttf');
 @include font('poppins-italic', $cdn+'fonts/Poppins/Poppins-Italic.ttf');
-@include font('poppins-extraLight', $cdn+'fonts/Poppins/Poppins-ExtraLight.ttf');
-@include font('poppins-extraBold', $cdn+'fonts/Poppins/Poppins-ExtraBold.ttf');
 @include font('poppins-bold', $cdn+'fonts/Poppins/Poppins-Bold.ttf');
-@include font('poppins-black', $cdn+'fonts/Poppins/Poppins-Black.ttf');
 
 $custom-spacers: (
   6:$spacer*3.25,
