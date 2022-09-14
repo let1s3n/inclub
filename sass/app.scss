@@ -1,0 +1,32 @@
+//Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//Base
+@import "base/reset";
+@import "base/general";
+
+//Layout
+@import "layout/layout";
+
+//Components
+@import "components/components";
+@import "components/navbar";
+@import "components/offcanvas";
+@import "components/pagination";
+@import "components/customFormBig";
+
+
+// Bootstrap Helpers
+//@import "bootstrap/scss/helpers";
+
+// Bootstrap Utilities
+@import "bootstrap/scss/utilities/api";
+
+// Pages
+/* @import "pages/home";
+@import "pages/projects";
+@import "pages/process";
+@import "pages/workwithus";
+@import "pages/services";
+@import "pages/contact"; */

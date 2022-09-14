@@ -1,0 +1,20 @@
+.offcanvas-body {
+  padding: 1.5rem 2.5rem;
+
+  width: 100vw;
+  height: 100vh;
+  /*  background-image: url("/images/patron.svg"), $degrade-subsecciones;
+  background-position: left top;
+  background-size: 100%; */
+  z-index: 99999;
+
+  /* .logo-loader {
+    width: 200px;
+    height: 200px;
+  } */
+
+}
+
+.offcanvas-start {
+  border-right: none !important;
+}
