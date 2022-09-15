@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+
+import { Container } from 'react-bootstrap'
+
 import List from '../../elements/List/List'
 import SearchBar from '../../elements/SearchBar/SearchBar'
 

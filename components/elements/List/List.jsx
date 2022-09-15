@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Row, Col, Card, Button} from 'react-bootstrap'
-import placeholder from '../assets/img/placeholder.jpg'
+import { Row, Col, Card, Button } from 'react-bootstrap'
 
 const List = ({ search }) => {
 
@@ -37,7 +36,7 @@ const List = ({ search }) => {
   }
 
   const Modal = ({ object: { original_title, original_language } }) => (
-    <div style={{width:'18rem',height:'650px'}} className="active position-fixed top-50 start-50 translate-middle rounded border border-primary bg-light bg-gradient">
+    <div style={{ width: '18rem', height: '650px' }} className="active position-fixed top-50 start-50 translate-middle rounded border border-primary bg-light bg-gradient">
       <h2>{original_title}</h2>
       <span className="description">{original_language}</span>
       <button onClick={() => setShowModal(false)}>Close me</button>
@@ -49,11 +48,11 @@ const List = ({ search }) => {
       <h2>{`Page ${pageNum}`}</h2>
       {res ? res.map(item => {
         return (
-          <Col key={item.id}  onClick={() => {setActiveObject(item);setShowModal(true);}}
-          className={`${getClass(item.id)} col-lg-3`}>
+          <Col key={item.id} onClick={() => { setActiveObject(item); setShowModal(true); }}
+            className={`${getClass(item.id)} col-lg-3`}>
             <Card className="position-relative rounded" style={{ backgroundColor: '#f8f8f8', width: '18rem', height: '650px' }}>
 
-              <Card.Img className="rounded-top" style={{ height: '350px', width: '100%' }} variant="top" src={item.poster_path ? `http://image.tmdb.org/t/p/w500/${item.poster_path}` : placeholder} />
+              <Card.Img className="rounded-top" style={{ height: '350px', width: '100%' }} variant="top" src={item.poster_path ? `http://image.tmdb.org/t/p/w500/${item.poster_path}` : '/img/placeholder.jpg'} />
 
               <Card.Body style={{ padding: '10px', height: '300px' }}>
                 <Card.Title style={{ height: '70px' }}>{item.original_title}</Card.Title>
