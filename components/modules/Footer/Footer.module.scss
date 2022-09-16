@@ -1,2 +1,16 @@
 @import "../../../sass/abstracts/variables";
 @import "../../../sass/abstracts/mixins";
+
+
+.generalFooter {
+  @include media-breakpoint-up(lg) {
+    height: 250px;
+  }
+  display: flex;
+  height: auto;
+  background-color: $primary;
+  justify-content: center;
+  align-items: center;
+  font-size:2rem;
+  color: $white;
+}
