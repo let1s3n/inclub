@@ -5,7 +5,11 @@ body {
 }
 
 .main-container {
-  min-height: calc(100vh - 250px);
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100vh - 306px);
+  }
+
+  min-height: calc(100vh - 156px);
 }
 
 .fw-600 {

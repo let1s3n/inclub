@@ -59,7 +59,7 @@ const Registro = () => {
   }
 
   return (
-    <Container className="mt-3">
+    <Container className="p-5">
       <Form id="pdf" onSubmit={onSubmit}>
         <Form.Group className="mb-3" controlId="imagenID">
           <Form.Label>
