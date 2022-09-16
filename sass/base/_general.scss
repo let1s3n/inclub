@@ -4,6 +4,9 @@ body {
   background: #FFFFFF;
 }
 
+.main-container {
+  min-height: calc(100vh - 250px);
+}
 
 .fw-600 {
   font-weight: 600 !important;
