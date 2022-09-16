@@ -1,15 +1,10 @@
 @import "bootstrap/scss/functions";
 
-$body-color: #000000;
 $font-family-sans-serif: 'poppins-regular', sans-serif;
-
-$primary: #25A2DC;
-$secondary: #1E1E1E;
-
-
 $font-weight-bolder: 800;
 
 $enable-negative-margins: true;
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -34,15 +29,12 @@ $container-max-widths: (
 
 $position-values: (
   0: 0,
+  5:5%,
+  10:10%,
   25: 25%,
   50: 50%,
   75: 75%,
   100: 100%
-);
-
-$table-variants: (
-  "primary": $primary,
-  "white":#FFFFFF
 );
 
 @import "bootstrap/scss/variables";
@@ -55,9 +47,4 @@ $font-family-primary: $font-family-sans-serif;
 $font-size-xsm: $font-size-base * .625;
 
 //Colors
-$customRed: #EC3737;
 $desactivado: #898989;
-$vivo: #65C4C0;
-$repeticion: #7DAED8;
-$diferido: #8B8DCB;
-$darkGray: #454545;

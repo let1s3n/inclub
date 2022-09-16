@@ -54,20 +54,21 @@ const List = ({ search }) => {
 
               <Card.Img className="rounded-top" style={{ height: '350px', width: '100%' }} variant="top" src={item.poster_path ? `http://image.tmdb.org/t/p/w500/${item.poster_path}` : '/img/placeholder.jpg'} />
 
-              <Card.Body style={{ padding: '10px', height: '300px' }}>
-                <Card.Title style={{ height: '70px' }}>{item.original_title}</Card.Title>
+              <Card.Body className="position-relative" style={{ padding: '10px', height: '300px' }}>
+                <Card.Title>{item.original_title}</Card.Title>
                 <Card.Text style={{ height: '150px' }}>
                   {item.overview ? item.overview.length < 200 ? item.overview : item.overview.substr(0, 200) + '...' : 'No description'}
 
                 </Card.Text>
-                <Button variant="primary">Ver más</Button>
+                <Button variant="primary" className="position-absolute bottom-5 start-5">Ver más</Button>
               </Card.Body>
             </Card>
           </Col>)
       }) : <h1>{`No se encontraron resultados para ${search}`}</h1>}
-      <Button onClick={handleClick} name="next">Next Page</Button>
-      <Button onClick={handleClick} name="previous">Previous Page</Button>
-
+      <div className="d-flex justify-content-between mt-5">
+        <Button onClick={handleClick} name="previous">Previous Page</Button>
+        <Button onClick={handleClick} name="next">Next Page</Button>
+      </div>
       {showModal ? <Modal object={activeObject} /> : null}
     </Row>
 

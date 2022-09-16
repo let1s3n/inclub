@@ -48,19 +48,6 @@ h1,
   margin: 0;
 }
 
-
-.error-text {
-  color: $customRed;
-
-  @include media-breakpoint-only(xs) {
-    font-weight: normal !important;
-  }
-}
-
-.error-border {
-  border-color: $customRed;
-}
-
 button {
   &:focus {
     box-shadow: none !important;
@@ -69,64 +56,6 @@ button {
 
 a {
   text-decoration: none;
-}
-
-
-.carousel-indicators {
-
-  /* @include media-breakpoint-up(md) {
-        margin-top: 2.5rem;
-    } */
-  @include media-breakpoint-up(lg) {
-    margin-bottom: 50px !important;
-  }
-
-  /* top: 100%; */
-  /* margin-top: 1.5rem; */
-  /* bottom: unset; */
-  height: 12px;
-
-  [data-bs-target] {
-    background-color: $white  !important;
-    text-indent: 0 !important;
-    opacity: unset !important;
-  }
-
-  .active {
-    /* background-color: unset; */
-    background-color: $primary  !important;
-  }
-
-  button {
-    flex: unset !important;
-    height: 10px !important;
-    width: 10px !important;
-    border-radius: 50%;
-    border: none !important;
-
-  }
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  opacity: unset !important;
-
-  @include media-breakpoint-down(lg) {
-    padding-top: 67px !important;
-  }
-
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 15px !important;
-  height: 15px !important;
-
-  @include media-breakpoint-up(lg) {
-    width: 32px !important;
-    height: 32px !important;
-  }
-
 }
 
 .navbar-toggler {
@@ -151,9 +80,9 @@ a {
   bottom: 22% !important;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   display: none;
-}
+} */
 
 .poppinsLight {
   font-family: 'poppins-light';
